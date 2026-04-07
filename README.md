@@ -93,7 +93,7 @@ terraform destroy
 
 ## License
 
-[Add your license here]
+MIT License
 
 ## Support
 

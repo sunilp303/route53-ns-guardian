@@ -1,0 +1,13 @@
+# terraform.tfvars — fill in your values
+
+parent_zone_id    = "ZZZZZZZZZZZZZZZZZZZZ"           # Route53 zone ID of sub-domain
+parent_domain     = "terraform-r53.example.cloud"
+
+slack_webhook_url = "https://hooks.slack.com/services/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+alert_email       = "sunil@example.com"     # leave empty if you already have an SNS topic
+
+schedule_expression = "rate(24 hours)"
+
+# Start in dry-run mode — review Slack alerts, then flip these when ready
+dry_run        = true
+auto_remediate = false
